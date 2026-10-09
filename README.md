@@ -1,2 +1,41 @@
-# MTA-Messaging-System
-Modern MTA SA messaging system with Glassmorphism UI, real-time chat, and notifications
+# MTA SA Messaging System
+
+## الوصف
+هذا المشروع يمثل نظام مراسلات خاص داخل MTA SA بتصميم Dashboard Dark Glassmorphism وبنفس مفهوم الواتساب، مع:
+- قائمة المتصلين Online
+- شات خاص بين لاعب وآخر
+- نوافذ Toast للإشعارات في أعلى الشاشة
+- فتح النظام من F7
+- أصوات إرسال واستقبال الرسائل
+- لوحة داكنة أنيقة بنمط Bento/Grid مع ألوان زرقاء داكنة
+
+## البنود التقنية
+- Server-side: التعامل مع قوائم اللاعبين وإرسال الرسائل
+- Client-side: واجهة المستخدم + رسائل + F7 + Toast + الأصوات
+- تم تصميمه كـ resource MTA جاهز للاستخدام
+
+## التثبيت
+1. انسخ مجلد `mta_messaging` إلى مجلد الموارد الخاص بك في السيرفر:
+   `mods/deathmatch/resources/`
+2. أضف المورد إلى `server.cfg`:
+   ```bash
+   start mta_messaging
+   ```
+3. داخل اللعبة اضغط `F7` لفتح لوحة المراسلة.
+
+## ملاحظات
+- هذا المشروع مهيأ كـ foundation/Starter Module عملي وقابل للتوسعة.
+- يمكن تطويره لاحقاً إلى:
+  - شات جماعي
+  - تحديد ألوان/حالة اللاعب
+  - تسجيل الرسائل
+  - دعم ملفات/صور/مرفقات
+  - نظام إعدادات / تفعيل/إلغاء السكون
+
+## هيكل المشروع
+```bash
+mta_messaging/
+├── client.lua
+├── server.lua
+├── meta.xml
+```
